@@ -61,7 +61,7 @@ int main(void) {
   char* buff_str = (char*)malloc(size/2); // 힙 영역에 저장
   long int found_str;
   while (fgets(buffer, BUFFER_LEN, fp) != NULL) {
-    target = strstr(buffer, "-");
+    target = strstr(buffer, "<span class=\"date\">");
 
     if (target != NULL) {
       found_str = strlen(target);
